@@ -1,0 +1,92 @@
+.App {
+    text-align: center;
+}
+
+main {
+    min-height: calc(100vh - 70px - 64px);
+    padding: 12px 0;
+}
+
+.preloader_wrapper {
+    height: calc(100vh - 64px - 70px - 104px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content {
+    flex-grow: 1;
+}
+
+img,
+iframe {
+    max-width: 100%;
+}
+
+iframe {
+    width: 600px;
+    height: 350px;
+}
+
+form {
+    margin-top: 20px;
+    width: 50%;
+    align-self: center;
+}
+
+.contact-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dots {
+    width: 44.6px;
+    height: 44.6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dots::before,
+.dots::after {
+    content: "";
+    width: 17.3px;
+    background: radial-gradient(farthest-side, #cfe2ff 90%, #0000) top,
+        radial-gradient(farthest-side, #cfe2ff 90%, #0000) bottom;
+    background-size: 17.3px 17.3px;
+    background-repeat: no-repeat;
+    transform-origin: 50% calc(100% - 8.6px);
+    animation: dots-wila4g 1s infinite;
+}
+
+.dots::after {
+    transform-origin: 50% 8.6px;
+}
+
+@keyframes dots-wila4g {
+
+    70%,
+    100% {
+        transform: rotate(-270deg);
+    }
+}
+
+@media (max-width: 460px) {
+    a.brand-logo {
+        font-size: 18px;
+    }
+}
