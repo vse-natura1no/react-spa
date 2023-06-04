@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-spa/static/css/main.a4d0894a.css",
+    "main.js": "/react-spa/static/js/main.e3142464.js",
+    "index.html": "/react-spa/index.html",
+    "main.a4d0894a.css.map": "/react-spa/static/css/main.a4d0894a.css.map",
+    "main.e3142464.js.map": "/react-spa/static/js/main.e3142464.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a4d0894a.css",
+    "static/js/main.e3142464.js"
+  ]
+}
